@@ -1,4 +1,5 @@
 # Density-dependent emigration: The adequate use of limited information in dispersal decisions
+[![DOI](https://zenodo.org/badge/21570/akubisch/smart_disp.svg)](https://zenodo.org/badge/latestdoi/21570/akubisch/smart_disp)
 
 Authors: Hans Joachim Poethke, Alexander Kubisch, Oliver Mitesser &amp; Thomas Hovestadt
 
