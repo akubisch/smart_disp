@@ -182,10 +182,10 @@ axis(side=2,at=c(0,0.25,0.5,0.75,1),labels=c("0","","0.5","","1"),cex.axis=axcex
 segments(xses_win,rep(-1,4),xses_win,c(wins_TA,wins_TAE,wins_TL,wins_S),lend=1,lwd=20,col="grey25")
 segments(xses_win,c(wins_TA,wins_TAE,wins_TL,wins_S),xses_win,c(wins_TA+draws_TA,wins_TAE+draws_TAE,wins_TL+draws_TL,wins_S+draws_S),lend=1,lwd=20,col="grey75")
 
-text(1,-0.15,expression(paste(T[A])),srt=90,xpd=T,cex=2.5)
-text(2,-0.15,expression(paste(T[AE])),srt=90,xpd=T,cex=2.5)
-text(3,-0.15,expression(paste(T[L])),srt=90,xpd=T,cex=2.5)
-text(4,-0.15,expression(paste(S)),srt=90,xpd=T,cex=2.5)
+text(1,-0.15,expression(paste(italic(T)[italic(A)])),srt=90,xpd=T,cex=2.5)
+text(2,-0.15,expression(paste(italic(T)[italic(AE)])),srt=90,xpd=T,cex=2.5)
+text(3,-0.15,expression(paste(italic(T)[italic(L)])),srt=90,xpd=T,cex=2.5)
+text(4,-0.15,expression(paste(italic(S))),srt=90,xpd=T,cex=2.5)
 
 
 #sig25, i05
@@ -212,10 +212,10 @@ plot(1,1,type="n",bty="l",ylim=c(0.038,1),
 segments(xses_win,rep(-1,4),xses_win,c(wins_TA,wins_TAE,wins_TL,wins_S),lend=1,lwd=20,col="grey25")
 segments(xses_win,c(wins_TA,wins_TAE,wins_TL,wins_S),xses_win,c(wins_TA+draws_TA,wins_TAE+draws_TAE,wins_TL+draws_TL,wins_S+draws_S),lend=1,lwd=20,col="grey75")
 
-text(1,-0.15,expression(paste(T[A])),srt=90,xpd=T,cex=2.5)
-text(2,-0.15,expression(paste(T[AE])),srt=90,xpd=T,cex=2.5)
-text(3,-0.15,expression(paste(T[L])),srt=90,xpd=T,cex=2.5)
-text(4,-0.15,expression(paste(S)),srt=90,xpd=T,cex=2.5)
+text(1,-0.15,expression(paste(italic(T)[italic(A)])),srt=90,xpd=T,cex=2.5)
+text(2,-0.15,expression(paste(italic(T)[italic(AE)])),srt=90,xpd=T,cex=2.5)
+text(3,-0.15,expression(paste(italic(T)[italic(L)])),srt=90,xpd=T,cex=2.5)
+text(4,-0.15,expression(paste(italic(S))),srt=90,xpd=T,cex=2.5)
 
 
 #sig25, i08
@@ -242,18 +242,18 @@ plot(1,1,type="n",bty="l",ylim=c(0.038,1),
 segments(xses_win,rep(-1,4),xses_win,c(wins_TA,wins_TAE,wins_TL,wins_S),lend=1,lwd=20,col="grey25")
 segments(xses_win,c(wins_TA,wins_TAE,wins_TL,wins_S),xses_win,c(wins_TA+draws_TA,wins_TAE+draws_TAE,wins_TL+draws_TL,wins_S+draws_S),lend=1,lwd=20,col="grey75")
 
-text(1,-0.15,expression(paste(T[A])),srt=90,xpd=T,cex=2.5)
-text(2,-0.15,expression(paste(T[AE])),srt=90,xpd=T,cex=2.5)
-text(3,-0.15,expression(paste(T[L])),srt=90,xpd=T,cex=2.5)
-text(4,-0.15,expression(paste(S)),srt=90,xpd=T,cex=2.5)
+text(1,-0.15,expression(paste(italic(T)[italic(A)])),srt=90,xpd=T,cex=2.5)
+text(2,-0.15,expression(paste(italic(T)[italic(AE)])),srt=90,xpd=T,cex=2.5)
+text(3,-0.15,expression(paste(italic(T)[italic(L)])),srt=90,xpd=T,cex=2.5)
+text(4,-0.15,expression(paste(italic(S))),srt=90,xpd=T,cex=2.5)
 
 mtext(at=0.5,side=1,line=2,outer=T,cex=2,"Decision rule")
 mtext(at=0.2,side=2,line=6.5,outer=T,cex=2,expression(sigma==25))
 mtext(at=0.55,side=2,line=6.5,outer=T,cex=2,expression(sigma==12.5))
 mtext(at=0.875,side=2,line=6.5,outer=T,cex=2,expression(sigma==0))
 mtext(at=0.55,side=2,line=3,outer=T,cex=2,"Fraction won/draw")
-mtext(at=0.485,side=3,line=2,outer=T,"I = 0.5",cex=2)
-mtext(at=0.825,side=3,line=2,outer=T,"I = 0.8",cex=2)
-mtext(at=0.15,side=3,line=2,outer=T,"I = 0.2",cex=2)
+mtext(at=0.485,side=3,line=2,outer=T,expression(italic(I)==0.5),cex=2)
+mtext(at=0.825,side=3,line=2,outer=T,expression(italic(I)==0.8),cex=2)
+mtext(at=0.15,side=3,line=2,outer=T,expression(italic(I==0.2)),cex=2)
 
 dev.copy2eps(file="figure_3.eps",title="Poethke et al. | Figure 3")

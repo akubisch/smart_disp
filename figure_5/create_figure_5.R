@@ -9,7 +9,7 @@ axcex <- 1.5
 
 par(mfrow=c(2,1),mar=c(.5,5,2,.5),oma=c(4.5,.1,0,0))
 
-plot(1,1,type="n",bty="l",xlab="rel. decrease in growth rate", ylab=expression(paste("Information accuracy ",I[j])), xlim=c(0,0.1),ylim=c(0,1),yaxt="n",cex.lab=cexlab,cex.axis=axcex,xaxt="n")
+plot(1,1,type="n",bty="l",xlab="rel. decrease in growth rate", ylab=expression(paste("Information accuracy ",italic(I)[italic(j)])), xlim=c(0,0.1),ylim=c(0,1),yaxt="n",cex.lab=cexlab,cex.axis=axcex,xaxt="n")
 axis(side=2,at=c(0,0.5,1),labels=c("0","0.5","1"),cex.axis=axcex)
 lines(info[,1]~trade,type="p",lwd=2,pch=15,col=gray(0.75))
 lines(smooth.spline(info[,1]~trade,df=dfs),lwd=2,,col=gray(0.75),lty="dashed")
@@ -26,7 +26,7 @@ legend("topright",pch=c(15,17,16),lwd=rep(2,4),
        ),bty="n",cex=1.5)
 
 
-plot(1,1,type="n",bty="l",xlab="", ylab=expression(paste("Investment ",tau %.% I[j])), xlim=c(0,0.1),ylim=c(0,0.012),yaxt="n",cex.lab=cexlab,cex.axis=axcex)
+plot(1,1,type="n",bty="l",xlab="", ylab=expression(paste("Investment ",tau %.% italic(I)[italic(j)])), xlim=c(0,0.1),ylim=c(0,0.012),yaxt="n",cex.lab=cexlab,cex.axis=axcex)
 axis(side=2,at=c(0,0.005,0.01),label=c("0","0.005","0.01"),cex.axis=axcex)
 lines(info[,1]*trade~trade,type="p",lwd=2,pch=15,col=gray(0.75))
 lines(smooth.spline(info[,1]*trade~trade,df=dfs),lwd=2,col=gray(0.75),lty="dashed")
