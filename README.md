@@ -3,9 +3,9 @@
 
 Authors: Hans Joachim Poethke, Alexander Kubisch, Oliver Mitesser &amp; Thomas Hovestadt
 
-This repository contains the sources and scripts necessary to perform and analyze the simulation models presented in our study. The manuscript itself is currently in submission / review.
+This repository contains the sources and scripts necessary to perform and analyze the simulation models presented in our study. The manuscript itself is currently in revision.
 
-The folder `figures_2_3` contains the model version with the competition implemented, `figure_4` the plain model and `figure_5` a version with the trade-off between reproduction and information accuracy included. Note that the trade-off version was derived from the competition version for test purposes, which is why its overall structure is closer to that than to the plain model.
+The folder `figures_2_3_table_A1` contains the model version with the competition implemented, `figure_4` the plain model and `figure_5` a version with the trade-off between reproduction and information accuracy included. Note that the trade-off version was derived from the competition version for test purposes, which is why its overall structure is closer to that than to the plain model.
 
 ### Abstract
 

@@ -31,11 +31,11 @@ gamlab = c(paste(expression(gamma==0)),
 x11()
 
 ggplot(res,aes(x=dens,y=disp,colour=gamma, group=gamma, linetype=gamma)) + geom_line(size=1.25) +
-  theme_classic(base_size=25) +
+  theme_bw(base_size=25) +
   scale_color_grey() +
   theme(legend.position="none", text=element_text(size=25),axis.line.x=element_line(color="black"),axis.line.y=element_line(color="black")) +
-  ylab(expression(paste("Emigration probability ", italic(d)[italic(TAE)]))) +
-  xlab(expression(paste("Estimated population density ",italic(N)[italic(i)]^italic(E)/bar(italic(K))))) +
+  ylab(expression(paste("Emigration probability ", italic(d)[TAE]))) +
+  xlab(expression(paste("Estimated population density ",italic(N)[i]^E/bar(italic(K))))) +
   annotate("text",x=c(2.5,2.3,1.9,1.55),y=c(0.475,0.6,0.8,0.9),parse=T,label=gamlab, size=7)
 
 dev.copy2eps(file="figure_1.eps",title="Poethke et al. | Figure 1")

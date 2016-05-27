@@ -1,1 +1,0 @@
-s1  s2  frac_s1  frac_draw  time_to_decision

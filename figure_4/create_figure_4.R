@@ -36,8 +36,8 @@ info <- seq(0.05,1,0.05)
 
 x11(width=5.5,height=9)
 
-axcex <- 2
-cexi <- 1.75
+axcex <- 2.4
+cexi <- 2
 lwdi <- 2
 dfs <- 5
 labcex <- 1.35
@@ -76,8 +76,8 @@ legend("topright",pch=c(15,17,16),lwd=lwdi,col=c("grey75","grey60","black"),c(ex
 axis(side=1,cex.axis=axcex)
 
 mtext(side=1,at=0.5,expression(paste("Information accuracy ",italic(I)[italic(j)])),cex=labcex,outer=T,line=2.5)
-mtext(side=2,at=0.825,expression(paste("Emigration probability ", italic(d)[italic(TAE)])),cex=labcex,outer=T,line=1.5)
-mtext(side=2,at=0.5,expression(paste("Threshold density ",italic(C)[italic(T)])),cex=labcex,outer=T,line=1.5)
+mtext(side=2,at=0.825,expression(paste("Emigration probability ", italic(d)[TAE])),cex=labcex,outer=T,line=1.5)
+mtext(side=2,at=0.5,expression(paste("Threshold density ",italic(C)[T])),cex=labcex,outer=T,line=1.5)
 mtext(side=2,at=0.15,expression(paste("Scaling parameter ",italic(gamma))),cex=labcex,outer=T,line=1.5)
 
 dev.copy2eps(file="figure_4.eps", title="Poethke et al. | Figure 4")
